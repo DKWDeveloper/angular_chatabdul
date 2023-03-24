@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap grid</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<style>
+    .div1 {
+        background-color: yellow;
+        width: 100px;
+        border: 1px solid black;
+    }
+
+    .h1-logo {
+        display: flex !important;
+        flex-direction: row !important;
+    }
+
+    .align-cnt{
+        display: flex !important;
+        flex-direction: row-reverse !important;
+
+    }
+</style>
+
+
+<body>
+    <div class="container cnt" style="background-color: red;">
+        <div class="row align-cnt">
+
+            <div class="col-12">
+                <div class="h1-logo">
+                    <div class="col-12">
+                        <h1>welcome to Abu-dabi</h1>
+                    </div>
+
+                    <div class="col-12" style="">
+                        <img src="data:image/png;base64,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"
+                            class="img-fluid" alt="logo">
+                    </div>
+                </div>
+
+                <p class="">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy</p>
+                <p class="">Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's standard dummy</p>
+            </div>
+
+            <div>
+                <img src="https://picsum.photos/id/237/200/300" alt="">
+            </div>
+        </div>
+</body>
+
+</html>

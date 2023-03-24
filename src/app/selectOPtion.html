@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .select-box {
+            width: 300px;
+            position: relative;
+        }
+
+        .select-box select {
+            height: 42px;
+            padding: 10px 15px;
+            line-height: 18px;
+            font-size: 16px;
+            width: 100%;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            -webkit-appearance: none;
+            appearance: none;
+        }
+
+        .select-box::after {
+            border-radius: none;
+            outline: none;
+        }
+
+        .select-box:focus{
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="select-box">
+        <select>
+            <option>Select 1</option>
+            <option>Select 1</option>
+            <option>Select 1</option>
+        </select>
+    </div>
+</body>
+
+</html>

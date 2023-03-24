@@ -1,0 +1,393 @@
+.bg {
+    background: url("https://chatabdul.com/assets/Images/home/background-image.webp");
+    background-size: cover;
+    height: 100%;
+    /* height: 140vh; */
+    /* padding-bottom: 200px; */
+    width: 100%;
+    position: fixed;
+    overflow-y: auto;
+}
+
+.main-section {
+    margin-bottom: 200px;
+}
+
+.bg::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    backdrop-filter: blur(10px);
+    pointer-events: none;
+}
+
+.logo img {
+    width: 100px;
+}
+
+.messagebox textarea {
+    opacity: .7;
+}
+
+.scrollable-chips {
+    overflow-x: scroll;
+    height: 58px;
+    white-space: nowrap;
+}
+
+.scrollable-chips a {
+    padding: 5px 20px;
+    background-color: rgb(255, 255, 255, .7);
+    border-radius: 25px;
+    margin-right: 10px;
+}
+
+.btn-primary {
+    background-color: #1D0500;
+    border: 1px solid #1D0500;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.btn-orange {
+    background-color: #A2684B;
+    color: #fff;
+}
+
+.scrollable-text {
+    background-color: #81583A;
+    color: #fff;
+}
+
+.abdul {
+    display: flex;
+    align-self: flex-end;
+}
+
+.copyright {
+    background-color: #A2684B;
+    color: #000000;
+}
+
+.copyright p {
+    font-size: 10px;
+}
+
+.opacity70 {
+    background-color: rgb(255, 255, 255, .7);
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.copyright {
+    background-color: #A2684B;
+    color: #000000;
+    font-size: 10px;
+
+}
+
+.copyright p {}
+
+.opacity70 {
+    background-color: rgb(255, 255, 255, .7);
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.not-hyper-text {
+    text-decoration: none;
+    color: black;
+}
+
+.description {
+    align-self: center;
+}
+
+#scroll-container {
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+#scroll-text {
+    /* animation properties */
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+
+    -moz-animation: my-animation 25s linear infinite;
+    -webkit-animation: my-animation 25s linear infinite;
+    animation: my-animation 25s linear infinite;
+}
+
+/* for Firefox */
+@-moz-keyframes my-animation {
+    from {
+        -moz-transform: translateX(100%);
+    }
+
+    to {
+        -moz-transform: translateX(-100%);
+    }
+}
+
+/* for Chrome */
+@-webkit-keyframes my-animation {
+    from {
+        -webkit-transform: translateX(100%);
+    }
+
+    to {
+        -webkit-transform: translateX(-100%);
+    }
+}
+
+@keyframes my-animation {
+    from {
+        -moz-transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+    }
+
+    to {
+        -moz-transform: translateX(-100%);
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+}
+
+.btn-disable {
+    cursor: not-allowed;
+}
+
+.required {
+    border: 2px solid rgb(244, 3, 3);
+}
+
+.copy_btn {
+    text-decoration: none;
+    border: none;
+    /* background-color: green; */
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+    cursor: pointer;
+    outline: none;
+    transition: 0.2s all;
+
+    /* position: fixed !important; */
+    right: 0;
+}
+
+/* Adding transformation when the button is active */
+
+.copy_btn:active {
+    transform: scale(0.98);
+    /* Scaling button to 0.98 to its original size */
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+    /* Lowering the shadow */
+}
+
+/*Huge thanks to @tobiasahlin at http://tobiasahlin.com/spinkit/ */
+.spinner {
+    display: inline;
+}
+
+.spinner>div {
+    width: 5px;
+    height: 5px;
+    background-color: #fff;
+
+    border-radius: 100%;
+    display: inline-block;
+    -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+    animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+
+.spinner .bounce1 {
+    -webkit-animation-delay: -0.32s;
+    animation-delay: -0.32s;
+    margin-right: 2px;
+}
+
+.spinner .bounce2 {
+    -webkit-animation-delay: -0.16s;
+    animation-delay: -0.16s;
+    margin-right: 2px;
+}
+
+@-webkit-keyframes sk-bouncedelay {
+
+    0%,
+    80%,
+    100% {
+        -webkit-transform: scale(0)
+    }
+
+    40% {
+        -webkit-transform: scale(1.0)
+    }
+}
+
+@keyframes sk-bouncedelay {
+
+    0%,
+    80%,
+    100% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+
+    40% {
+        -webkit-transform: scale(1.0);
+        transform: scale(1.0);
+    }
+}
+
+.text {
+    display: flex;
+    position: absolute;
+    width: 23%;
+    height: 24px;
+    left: 75%;
+    top: 22.5px;
+    font-family: 'Inter';
+    background: transparent;
+    font-style: normal;
+    border: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 17px;
+    color: #000000;
+    outline: none;
+    appearance: none;
+}
+
+.text:hover {
+    cursor: pointer;
+}
+
+.lang-icon {
+    margin-right: 10%;
+}
+
+@media only screen and (max-width: 600px) {
+    .lang-icon {
+        margin-bottom: 1.3rem;
+    }
+}
+
+.text1 {
+    display: flex;
+    position: absolute;
+    width: 23%;
+    height: 24px;
+    left: 90%;
+    top: 22.5px;
+    font-family: 'Inter';
+    background: transparent;
+    font-style: normal;
+    border: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 17px;
+    color: #000000;
+    outline: none;
+    appearance: none;
+}
+
+#hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 1px;
+
+    position: relative !important;
+
+}
+
+.cont {
+    position: absolute !important;
+    top: -24px !important;
+    right: 25% !important;
+    bottom: 0;
+}
+
+select {
+    bottom: 0 !important;
+    width: auto !important;
+    height: 20px !important;
+    padding-left: 10px;
+    border-radius: 10px;
+    outline: 0px !important;
+    scroll-behavior: smooth !important;
+}
+
+select option {
+    padding: 20px;
+    font-size: large;
+}
+
+#social {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    margin-bottom: 2%;
+    margin-left: 50%;
+    flex-wrap: wrap;
+}
+
+.social {
+    margin-left: 80% !important;
+}
+
+@media only screen and (max-width: 600px) {
+    select {
+        font-size: 14px;
+        max-width: 200px;
+    }
+
+    .social {
+        margin-left: 61% !important;
+    }
+
+    .text1 {
+        left: 81% !important;
+        top: 20.5px;
+    }
+}
+
+.responseBox {
+    overflow: scroll;
+    max-height: 200px;
+}
+
+
+.position-relative {
+    position: relative !important;
+}
+
+.position-absolute {
+    position: absolute !important;
+    bottom: 0px;
+    right: 30px !important;
+}
+
+.email {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.insta-icon {
+    width: 15px;
+    /* height: 15px; */
+}
+

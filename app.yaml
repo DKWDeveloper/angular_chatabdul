@@ -1,0 +1,13 @@
+runtime: nodejs16
+instance_class: F2
+
+env_variables:
+  BUCKET_NAME: "chatabdul-fe"
+
+handlers:
+  - url: /
+    static_files: dist/chatabdul/index.html
+    upload: dist/chatabdul/index.html
+
+  - url: /
+    static_dir: dist/chatabdul
